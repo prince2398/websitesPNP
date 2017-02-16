@@ -113,28 +113,28 @@ top:0;}
 
 
 Your First Name please:<span style="color:#cf0000">*</span><br>
-<input type="text" name="firstname" required><br>
+<input type="text" name="firstname" value="<?php echo $firstname;?>" required><br>
 <span class='error'><?php echo $fnm_err; ?> </span><br>
 
 
 Your Last Name please:<br>
-<input type="text" name="lastname"><br>
+<input type="text" name="lastname" value="<?php echo $lastname;?>"><br>
 <span class='error'><?php echo $lnm_err ;?> </span><br>
 
 
 Your e-mail id please:<span style="color:#cf0000">*</span><br>
- <input type="email" name="email" required><br>
+ <input type="email" name="email" value="<?php echo $email;?>" required><br>
  <span class='error'><?php echo $email_err; ?> </span><br>
  
  
 Your Mobile Number please( Relax! It will remain confidential)<span style="color:#cf0000">*</span><br>
-<input type="number" name="mobilenumber" required><br>
+<input type="number" name="mobilenumber" value="<?php echo $mobilenumber;?>" required><br>
 <span class='error'><?php echo $mno_err ; ?></span>
 
 
 Select your country<span style="color:#cf0000">*</span><br>
 
-          <select name="country" required>
+          <select name="country" value="<?php echo $country;?>" required>
 
             <option value="">Please Select</option>
 
@@ -583,8 +583,7 @@ Select your country<span style="color:#cf0000">*</span><br>
 
             <option value="Tonga">Tonga</option>
 
-            <option value="Trinidad &amp; 
-			Tobago">Trinidad &amp; Tobago</option>
+            <option value="Trinidad &amp; Tobago">Trinidad &amp; Tobago</option>
 
             <option value="Tunisia">Tunisia</option>
 
@@ -649,24 +648,25 @@ Select your country<span style="color:#cf0000">*</span><br>
 
 Do you have any website presently?!<span style="color:#cf0000">*</span><br><br>
 
- <select name="website" required>
+
+ <select name="website" value="<?php echo $website;?>" required>
 
             <option value="">Please Select</option>
 
-            <option value="Yes">Yes</option>
+            <option <?php if( isset($website) && ($website=='Yes')) echo "selected"; ?> value="Yes">Yes</option>
 
-            <option value="No">No</option>
+            <option <?php if( isset($website) && ($website=='Nos')) echo "selected"; ?> value="No">No</option>
 </select>
 <br>
  <span class='error'><?php echo $website_err; ?> </span> 
  
   If yes ,Enter the webaddress:<span style="color:#cf0000">*</span><br>
-<input type="url" name="webaddress" ><br>
+<input type="url" name="webaddress" value="<?php echo $webaddress;?>" ><br>
 <span class='error'><?php echo $address_err; ?> </span>
  
 
 Any additional information you would like to provide:<br>
-  <textarea placeholder="Write here!" name="comment"></textarea>
+  <textarea placeholder="Write here!" name="comment"><?php echo $comment;?></textarea>
 <br>
 
 
