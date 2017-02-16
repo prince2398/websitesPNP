@@ -98,7 +98,7 @@ top:0;}
 
 
 <meta charset="utf-8"/>
-<link rel="stylesheet" href="style.css" type="text/css"/]>
+<link rel="stylesheet" href="style.css" type="text/css"/>
 <meta name="viewport" content="width=device-width, initial scale="1.0">
 <title>Websites PNP</title>
 </head>
@@ -109,26 +109,28 @@ top:0;}
 <p>Fields marked (<span style="color:#cf0000">*</span>) are mandatory.</p>
 
 
-<form action="mailto:websitespnp@gmail.com?subject=formsubmission" method="post" enctype="text/plain">
+<form action="input.php" method="post" enctype="text/plain">
 
 
 Your First Name please:<span style="color:#cf0000">*</span><br>
 <input type="text" name="firstname" required><br>
-<span class='error'><?php echo $fnm_err; ?> </span>
+<span class='error'><?php echo $fnm_err; ?> </span><br>
 
 
-Your Last Name please:<span style="color:#cf0000">*</span><br>
-<input type="text" name="lastname" required><br>
-<span class='error'><?php echo $lnm_err ;?> </span>
+Your Last Name please:<br>
+<input type="text" name="lastname"><br>
+<span class='error'><?php echo $lnm_err ;?> </span><br>
 
 
 Your e-mail id please:<span style="color:#cf0000">*</span><br>
  <input type="email" name="email" required><br>
- <span class='error'><?php echo $email_err; ?> </span>
+ <span class='error'><?php echo $email_err; ?> </span><br>
+ 
  
 Your Mobile Number please( Relax! It will remain confidential)<span style="color:#cf0000">*</span><br>
 <input type="number" name="mobilenumber" required><br>
 <span class='error'><?php echo $mno_err ; ?></span>
+
 
 Select your country<span style="color:#cf0000">*</span><br>
 
@@ -656,21 +658,24 @@ Do you have any website presently?!<span style="color:#cf0000">*</span><br><br>
             <option value="No">No</option>
 </select>
 <br>
-<?php 
-   if(website=='yes'  ) {
-   echo  "enter the web address:"<br> ;
-  <input type="url" name="webaddress"><br>;
-  }
-  <span class='error'>echo $web_err; </span><br>;
-?>
-  
-  
+ <span class='error'><?php echo $website_err; ?> </span> 
+ 
+  If yes ,Enter the webaddress:<span style="color:#cf0000">*</span><br>
+<input type="url" name="webaddress" ><br>
+<span class='error'><?php echo $address_err; ?> </span>
+ 
 
 Any additional information you would like to provide:<br>
-  <textarea placeholder="Write here!"></textarea>
+  <textarea placeholder="Write here!" name="comment"></textarea>
 <br>
+
+
+
 <input type="submit" value="Submit(for the better)">
 <input type="reset" value="Thinking again?">
+
+
+
 </form>
 </body>
 </html>
