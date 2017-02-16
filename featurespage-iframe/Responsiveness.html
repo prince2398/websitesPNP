@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" /> 
+	<title>Responsiveness</title>
+	
+
+        <style  type="text/css">
+		p{border-left:6px solid #FFD700;
+		padding:3px;
+		border-radius:2px;
+		background-color:lavender;}
+		
+.body2{background-color:DarkSalmon;
+font-family:"Comic Sans MS", cursive, sans-serif;}
+          #banner {
+             margin-left:auto; 
+             margin-right:auto; 
+             width:1000px;  
+          }
+
+          #banner img { 
+             max-width:1000px; 
+             max-height:300px; 
+          }
+ 
+          #main {
+            margin-left:auto;
+            margin-right:auto;
+            width:1000px; 
+          }    
+
+          #main-content {
+            padding:20px;
+            width:625px; 
+            float:left;
+          }  
+
+          #widget-container {
+            padding:15px;
+            width:280px; 
+            float:right;
+          }   
+
+          .widget-content {
+             margin:20px; 
+             padding:1px;
+             width:250px;
+             background-color:#DDDDDD; 
+          }    
+
+          .widget-title {
+             font-weight:bold;
+             padding:10px;
+             background-color:yellow;  
+          }    
+
+          .widget-text {
+             padding:10px;
+             background-color:#FCFCFC;   
+          }    
+
+          @media (min-width: 481px) and (max-width: 768px) {
+            #banner { width:740px; }
+            #banner img { max-width:740px; max-height:222px; }
+            #main { width:740px; }            
+            #main-content { width:450px; float:left;
+overflow-y:auto;			}
+            #widget-container { width:200px; float:right; }
+            .widget-content { width:160px; }
+			
+          } 
+
+          @media (min-width: 321px) and (max-width: 480px) {
+            #banner { width:450px; }
+            #banner img { max-width:450px; max-height:135px; }
+            #main { width:450px; }            
+            #main-content { width:400px;
+			overflow-y:auto;}
+            #widget-container { width:400px; }
+            .widget-content { width:120px; margin:5px; float:left;}
+           
+          }
+
+          @media (max-width: 320px) {
+            #banner { width:275px; }
+            #banner img { max-width:275px; max-height:83px; }
+            #main { width:250px; }            
+            #main-content { width:250px;padding:0px;
+			overflow-y:auto;}
+            #widget-container { width:250px; padding:0px; }
+            .widget-content { width:250px; margin:5px;}
+           
+          }
+		  #webpnpresponsive{color:#FFFF00;
+		  position:absolute;
+		  font-size:50px;
+		  font-weight:bold;
+		  margin:8% 34%;
+		  opacity:1;
+		  z-index:1;}
+
+	</style>
+	
+</head>
+
+<body class="body2">
+<h2 id="webpnpresponsive">Websites PNP </h2>
+<div id="banner"><img src="responsiveness photo.jpg" style="width:100%"></div>
+
+<div id="main">
+ <div id="widget-container">
+  <div class="widget-content">
+   <div class="widget-title">
+Article 1
+   </div>
+   <div class="widget-text">
+    This is the first div of this responsiveness module.What responsiveness basically means is the ability of a website to adjust itself automatically according to the size or width of the website.
+	Written By
+	PNP
+   </div>
+  </div>  
+
+  <div class="widget-content">
+   <div class="widget-title">
+     Article 2 
+   </div>
+   <div class="widget-text">
+        This is the second div of this responsiveness module.What responsiveness basically means is the ability of a website to adjust itself automatically according to the size or width of the website.
+	Written By
+	PNP 
+   </div>
+  </div>  
+
+  <div class="widget-content">
+   <div class="widget-title">
+      Article 3
+   </div>
+   <div class="widget-text">
+         This is the third div of this responsiveness module.What responsiveness basically means is the ability of a website to adjust itself automatically according to the size or width of the website.
+	Written By
+	PNP
+   </div>
+  </div> 
+ </div>
+ <div id="main-content">
+      <p> 
+       In the years since it hit the scene, "responsive" has become the default choice for modern, mobile-friendly sites. With that visibility, though, comes misunderstanding and controversy! Some proponents treat responsive design as a silver bullet for every project's tough problems, while detractors complain it will limit their grand vision. Some clients believe they have to choose between a responsive site or a native mobile app, as if one ruled out the other. And in a few frustrating situations, we've seen totally separate mobile, tablet, and desktop mockups passed off as a "responsive" approach.
+      </p>
+      <p> 
+	  In the field of Web design and development, we’re quickly getting to the point of being unable to keep up with the endless new resolutions and devices. For many websites, creating a website version for each resolution and new device would be impossible, or at least impractical. Should we just suffer the consequences of losing visitors from one device, for the benefit of gaining visitors from another? Or is there another option?
+       
+      </p>
+      <p>
+	  “Recently, an emergent discipline called “responsive architecture” has begun asking how physical spaces can respond to the presence of people passing through them. Through a combination of embedded robotics and tensile materials, architects are experimenting with art installations and wall structures that bend, flex, and expand as crowds approach them. Motion sensors can be paired with climate control systems to adjust a room’s temperature and ambient lighting as it fills with people. Companies have already produced “smart glass technology” that can automatically become opaque when a room’s occupants reach a certain density threshold, giving them an additional layer of privacy.”
+       
+      </p>
+       
+ </div> 
+</div> 
+
+</body>
+</html>
