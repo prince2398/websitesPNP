@@ -170,7 +170,7 @@
 	 
 	 
 	 <input type="submit" name="submit" value="submit">
-	 <input type="reset" name="reset" value="Reset>
+	 <input type="reset" name="reset" value="Reset">
 	 
 	 
 	
