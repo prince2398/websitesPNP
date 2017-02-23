@@ -104,7 +104,7 @@
 	}
   ?>
  
- <br>Submitting  on <?php echo date("d-m-y"); ?><br>
+ <br>Submitting  on <?php echo date("l, d-m-y "); ?><br>
  <p> Fields marked <span class='err'>*</span>are mandatory </p>
  
  <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" >
@@ -114,7 +114,7 @@
   <span class="err"><?php echo $fname_err ;?></span><br>
   
   
-  Last Name : <span class='err'>*</span><br>
+  Last Name : <br>
   <input type="text" name="lname" value="<?php echo $lname;?>" >
   <span class="err"><?php echo $lname_err ;?></span><br>
   
@@ -144,7 +144,7 @@
 
 	 
     </select>
-	<span calss="err"><?php echo $country_err;?></span><br>
+	<span class="err"><?php echo $country_err;?></span><br>
 	
 	
 	Do you have website presently ? <span class="err">*</span><br>
@@ -153,7 +153,8 @@
 	   <option <?php if( isset($website) && ($website=="yes")) echo "selected"; ?> value="yes">Yes</option>
        <option <?php if( isset($website) && ($website=="no")) echo "selected"; ?> value="no">No</option>	   
 	
-	</select><br>
+	</select>
+	<span class="err"><?php echo $website_err;?></span><br>
 	
 	<?php 
     if( $website=='yes'){ ?> 
